@@ -180,6 +180,12 @@ input[type="radio"]:checked + .graphical-radio {
   body {
     background: #11203e;
   }
+  .social-media {
+    margin-bottom: 100px;
+  }
+  .social-media .links {
+    flex-direction: column;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
