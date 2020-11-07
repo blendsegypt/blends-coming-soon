@@ -180,6 +180,9 @@ input[type="radio"]:checked + .graphical-radio {
   body {
     background: #11203e;
   }
+  .logo {
+    margin-top: 50px;
+  }
   .social-media {
     margin-bottom: 100px;
   }
