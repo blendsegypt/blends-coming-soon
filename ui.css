@@ -1,0 +1,147 @@
+/* notify me button styling & keyframes */
+.button {
+  min-width: 150px;
+  display: flex;
+  padding: 25px;
+  border: none;
+  font-size: 16px;
+  letter-spacing: 0.2rem;
+  background: none;
+  color: inherit;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.button:focus {
+  outline: none;
+}
+
+/* Moema */
+.button--moema {
+  border-radius: 50px;
+  background: #c84d49;
+  color: #fff;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+.button--moema::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  bottom: -20px;
+  right: -20px;
+  background: inherit;
+  border-radius: 50px;
+  z-index: -1;
+  opacity: 0.4;
+  -webkit-transform: scale3d(0.8, 0.5, 1);
+  transform: scale3d(0.8, 0.5, 1);
+}
+.button--moema:hover {
+  -webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+  transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+  color: #eceff1;
+  background-color: #9b3430;
+  -webkit-animation: anim-moema-1 0.6s forwards;
+  animation: anim-moema-1 0.6s forwards;
+}
+.button--moema:hover::before {
+  -webkit-animation: anim-moema-2 0.3s 0.3s forwards;
+  animation: anim-moema-2 0.3s 0.3s forwards;
+}
+@-webkit-keyframes anim-moema-1 {
+  60% {
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+  }
+  85% {
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes anim-moema-1 {
+  60% {
+    -webkit-transform: scale3d(0.7, 0.7, 1);
+    transform: scale3d(0.7, 0.7, 1);
+  }
+  85% {
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+    transform: scale3d(1.1, 1.1, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes anim-moema-2 {
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes anim-moema-2 {
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+::selection {
+  color: white;
+  background: #c84d49; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  color: white;
+  background: #c84d49; /* Gecko Browsers */
+}
+
+.radio {
+  display: none;
+}
+
+.graphical-radio {
+  background: #213865;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+
+input[type="email"],
+input[type="text"] {
+  padding: 15px 15px 15px 20px;
+  font-size: 18px;
+  border: 0;
+  min-width: 300px;
+  border-radius: 50px;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus {
+  outline: none;
+}
+
+input[type="email"]::placeholder,
+input[type="text"]::placeholder {
+  color: #bfbfbf;
+}
