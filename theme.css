@@ -42,6 +42,7 @@ body {
   line-height: 2rem;
   margin: 20px 0;
   color: #5c6a86;
+  max-width: 700px;
 }
 
 .cta .highlight {
