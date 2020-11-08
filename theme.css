@@ -155,12 +155,12 @@ input[type="radio"]:checked + .graphical-radio {
 .message {
   display: none;
   max-width: 300px;
-  padding: 10px;
-  padding-right: 15px;
+  padding: 20px;
   border: none;
   background-color: #519463;
   font-size: 16px;
-  border-radius: 50px;
+  line-height: 1.8rem;
+  border-radius: 25px;
   color: #fff;
   z-index: 1;
   cursor: default;
@@ -189,19 +189,39 @@ input[type="radio"]:checked + .graphical-radio {
   .social-media .links {
     flex-direction: column;
   }
+  .social-media .link {
+    margin-bottom: 10px;
+  }
+  .button {
+    text-align: left;
+    align-items: center;
+  }
+  .form .field {
+    min-width: 0;
+    width: 150px;
+  }
+  .form .field {
+    padding-right: 80px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   body {
-    background: #11203e;
+    background: #11203e url("imgs/illustration.png") no-repeat right top;
+    background-size: 300px 300px;
+  }
+  .button {
+    text-align: left;
+    align-items: center;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   body {
-    background: #11203e;
+    background: #11203e url("imgs/illustration.png") no-repeat right top;
+    background-size: 400px 400px;
   }
 }
 
