@@ -71,7 +71,31 @@
       </div>
     </div> <!-- Social Media ::END -->
   </div>
-</body>
-<script src="jquery.js"></script>
+  <script src="jquery.js"></script>
 <script src="form.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBHx8o99e2cBhSrpeCkuCGZBJElWyyuFQI",
+    authDomain: "blends-coming-soon.firebaseapp.com",
+    databaseURL: "https://blends-coming-soon.firebaseio.com",
+    projectId: "blends-coming-soon",
+    storageBucket: "blends-coming-soon.appspot.com",
+    messagingSenderId: "120770714071",
+    appId: "1:120770714071:web:14aad609c041100a639392",
+    measurementId: "G-L01RS1MRDW"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</body>
 </html>
