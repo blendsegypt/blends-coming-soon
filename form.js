@@ -33,19 +33,19 @@ $(document).ready(function () {
             "/list.json",
           l = { data: i };
         $(".form").hide(500), $(".button").hide(500), $(".message").show(500);
-        // $.ajax({
-        //   accept: "application/json",
-        //   contentType: "application/json; charset=utf-8",
-        //   dataType: "json",
-        //   type: "POST",
-        //   url: t,
-        //   data: JSON.stringify(l),
-        //   success: function (e, a) {
-        //     $(".form").hide(500),
-        //       $(".button").hide(500),
-        //       $(".message").show(500);
-        //   },
-        // });
+        $.ajax({
+          accept: "application/json",
+          contentType: "application/json; charset=utf-8",
+          dataType: "json",
+          type: "POST",
+          url: t,
+          data: JSON.stringify(l),
+          success: function (e, a) {
+            $(".form").hide(500),
+              $(".button").hide(500),
+              $(".message").show(500);
+          },
+        });
       }
     });
 });
