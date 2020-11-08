@@ -24,6 +24,7 @@ $(document).ready(function () {
       if (!e) {
         e = !0;
         var i = $(".field").val();
+        if (i === "") return;
         $(".submit-link").addClass("disabled_link"),
           $(".field").addClass("disabled_input"),
           $(".field").attr("disabled", !0);
